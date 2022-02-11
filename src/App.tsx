@@ -1,18 +1,5 @@
-import {
-  Flex,
-  Heading,
-  Input,
-  Button,
-  useColorMode,
-  useColorModeValue,
-  Text,
-  Select,
-  Grid,
-  GridItem,
-  Box,
-  Spacer,
-} from "@chakra-ui/react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import Home from "./pages/home";
 import Meals from "./pages/meals";
 import Upgrade from "./pages/upgrade";
@@ -27,7 +14,7 @@ function App() {
       <Route path="/" element={<Home />} />
      
       
-        <Route path="/meals" element={<Meals />}/>
+        <Route path="/meals/:id" element={<Meals />}/>
         <Route path="/upgrade" element={<Upgrade />}/>
         <Route path="/payment" element={<Payments />}/>
     
